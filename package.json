@@ -1,0 +1,30 @@
+{
+  "private": true,
+  "sideEffects": false,
+  "scripts": {
+    "build": "remix build",
+    "dev": "swa start ./public --run \"remix dev\" --api-location .",
+    "start": "remix-serve build"
+  },
+  "dependencies": {
+    "@remix-run/react": "^1.5.1",
+    "@remix-run/azure-functions": "file:../../aaronpowell/remix/build/node_modules/@remix-run/azure-functions",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@azure/functions": "^3.0.0",
+    "@azure/static-web-apps-cli": "^0.8.3",
+    "@remix-run/dev": "^1.5.1",
+    "@remix-run/eslint-config": "^1.5.1",
+    "@remix-run/serve": "^1.5.1",
+    "@types/react": "^17.0.45",
+    "@types/react-dom": "^17.0.17",
+    "azure-functions-core-tools": "^4.0.4483",
+    "eslint": "^8.15.0",
+    "typescript": "^4.6.4"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
