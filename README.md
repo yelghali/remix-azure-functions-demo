@@ -2,6 +2,10 @@
 
 This is a demo showing Remix with Azure Functions/Static Webapp (using [@derkoe/remix-azure-functions](https://www.npmjs.com/package/@derkoe/remix-azure-functions)).
 
+## Demo
+
+The demo is currently deployed to https://gray-flower-02cee8d03.1.azurestaticapps.net using [this GitHub workflow](.github/workflows/azure-static-web-apps-gray-flower-02cee8d03.yml).
+
 ## Develop locally 
 
 You can run this app using the Azure Static Webapps tools. 
