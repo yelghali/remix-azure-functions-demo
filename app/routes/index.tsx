@@ -15,7 +15,7 @@ export default function Index() {
   const [response, setResponse] = useState(null);
 
   useEffect(() => {
-    fetch("https://swademoyaya.azurewebsites.net/api/HttpTrigger1")
+    fetch("https://swademoyaya.azurewebsites.net/api/HttpTrigger1?name=toto")
       .then(response => response.json())
       .then(data => setResponse(data));
   }, []);
@@ -26,6 +26,7 @@ export default function Index() {
         Here I'm calling the result of calling the API Function, exposed through
         Private endpoint in the Vnet
       </h1>
+      {response && <p>reponse</p>}
       {response && <pre>{JSON.stringify(response, null, 2)}</pre>}
       <h1>Welcome to Remix</h1>
     </div>
