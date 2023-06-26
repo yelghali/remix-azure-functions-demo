@@ -24,7 +24,7 @@ export default function Index() {
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
       <h1>
         Here I'm calling the result of calling the API Function, exposed through
-        Private endpoint in the Vnet
+        Private endpoint in the Vnet. 
       </h1>
       {response && <p>reponse</p>}
       {response && <pre>{JSON.stringify(response, null, 2)}</pre>}
